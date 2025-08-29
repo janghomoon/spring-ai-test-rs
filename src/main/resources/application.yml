@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-ai-test-rs
+  ai:
+    openai:
+      api-key: ${OPEN_API_KEY}
+  huggingface:
+    api-key: ${HUGGINGFACE_API_KEY} # your_hf_api_key_here write key
+    chat:
+      model: google/flan-t5-large
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+server:
+  port: 8080

@@ -22,7 +22,8 @@
 
 ### TODO 리스트
 * config 추가
-* LLM 호출 구현
+* LLM 호출 구현(OpenAI) - 무료 사용 불가
+* LLM 호출 구현(HuggingFace) - 무료 사용 불가
 * RAG 챗봇 설계
 * RAG  파이프라인 구축
 
