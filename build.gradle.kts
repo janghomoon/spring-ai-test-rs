@@ -43,6 +43,9 @@ dependencies {
     implementation("org.springframework.ai:spring-ai-huggingface-spring-boot-starter:1.0.0-M6")
 //    implementation("org.springframework.ai:spring-ai-starter-model-openai")
 
+    // PDF 처리 라이브러리
+    implementation("org.apache.pdfbox:pdfbox:2.0.27")
+
     // Swagger/OpenAPI 의존성
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
 
@@ -53,30 +56,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-//    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-//    implementation("org.springframework.boot:spring-boot-starter-jdbc")
-//    implementation("org.springframework.boot:spring-boot-starter-web")
-//    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-//    implementation("org.jetbrains.kotlin:kotlin-reflect")
-//    implementation("org.springframework.ai:spring-ai-starter-model-openai")
-//    implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
-//
-//    // Swagger/OpenAPI 의존성
-//    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
-//
-//    // 로깅 라이브러리
-//    implementation("io.github.oshai:kotlin-logging:6.0.3")// :6.0.3
-//
-//    // 코루틴 의존성
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-//
-//    runtimeOnly("com.microsoft.sqlserver:mssql-jdbc")
-//    runtimeOnly("com.mysql:mysql-connector-j")
-//    testImplementation("org.springframework.boot:spring-boot-starter-test")
-//    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-//    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
 }
 
 dependencyManagement {
@@ -90,12 +70,6 @@ kotlin {
         freeCompilerArgs.addAll("-Xjsr305=strict")
     }
 }
-
-//allOpen {
-//    annotation("jakarta.persistence.Entity")
-//    annotation("jakarta.persistence.MappedSuperclass")
-//    annotation("jakarta.persistence.Embeddable")
-//}
 
 tasks.withType<Test> {
     useJUnitPlatform()

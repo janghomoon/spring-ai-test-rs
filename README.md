@@ -18,12 +18,13 @@
 
 ### 프로그래밍 목적
 * Spring AI 활용하여  LLM호출 구현
-* RAG 챗봋 마나들기
+* RAG 챗봋 설계 및 파이프라인 구축
+* Storm Chat 활용하여 RAG 챗봇 구현
 
 ### TODO 리스트
 * config 추가
-* LLM 호출 구현(OpenAI) - 무료 사용 불가
-* LLM 호출 구현(HuggingFace) - 무료 사용 불가
+* LLM 호출 구현(OpenAI)
+* LLM 호출 구현(HuggingFace)
 * RAG 챗봇 설계
 * RAG  파이프라인 구축
 

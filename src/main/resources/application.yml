@@ -4,6 +4,9 @@ spring:
   ai:
     openai:
       api-key: ${OPEN_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-3-small
   huggingface:
     api-key: ${HUGGINGFACE_API_KEY} # your_hf_api_key_here write key
     chat:
